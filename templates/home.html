@@ -1,14 +1,17 @@
-{% extends 'base.html' %}
-
 {% load static %}
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
     <meta charset="utf-8">
     <title>Gex</title>
   </head>
   <body>
+    <ul>
+      <li><a href="#default.asp">Home</a></li>
+      <li><a href="#login.asp">Login</a></li>
+      <li><a href="#signUp.asp">Sign Up</a></li>
+    </ul>
     {% block title %}
     <h1>Gex</h1>
     {% endblock %}
