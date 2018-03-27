@@ -13,16 +13,27 @@ ul {
 li {
     float: right;
 }
-
-li a {
+#logo{
+    position: relative;
+    left: 2vw;
+    top: 1vh;
+}
+#btn{
     display: block;
     color: rgb(1, 166, 248);
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
 }
-
+#btn:hover{
+    background: rgb(1,166,248);
+    color: white;
+}
 h1 {
     font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(1, 166, 248)
 }
 
