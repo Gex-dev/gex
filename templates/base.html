@@ -1,0 +1,110 @@
+{% load static %}<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/style5.css' %}">
+
+    
+    <!-- START OF CODE -->
+    <title>Gex</title>
+    
+</head>
+<body>
+        <div class="wrapper">
+                <!-- Sidebar Holder -->
+                <nav id="sidebar">
+                    <div class="sidebar-header">
+                        <h3>Gex</h3>
+                    </div>
+    
+                    <ul class="list-unstyled components">
+                        <p>Directory</p>
+                        <li class="active">
+                            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Sample submenu</a>
+                            <ul class="collapse list-unstyled" id="homeSubmenu">
+                                <li><a href="https://gex.gg/">Gex Main site</a></li>
+                                <li><a href="#">Home 2</a></li>
+                                <li><a href="#">Home 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                            <ul class="collapse list-unstyled" id="pageSubmenu">
+                                <li><a href="#">Page 1</a></li>
+                                <li><a href="#">Page 2</a></li>
+                                <li><a href="#">Page 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <!-- Page Content Holder -->
+                <div id="content">
+    
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+    
+                            <div class="navbar-header">
+                                <button type="button" id="sidebarCollapse" class="navbar-btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+    
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="#">Page</a></li>
+                                    <li><a href="#">Page</a></li>
+                                    <li><a href="#">Page</a></li>
+                                    <li><a href="#">Page</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    
+                    {% block title %}
+                    Gex Base
+                    {% endblock %}
+    
+                    <div class="line"></div>
+    
+                    
+                </div>
+                
+            </div>
+    
+</body>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+{% block javascript %}
+{% endblock %}
+
+<!-- Menu Toggle Script -->
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    });
+</script>
+    
+
+</html>
