@@ -37,3 +37,35 @@ h1 {
     color: rgb(1, 166, 248)
 }
 
+#ytvideo-div {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 60vh;
+}
+#yt {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#twitter_btn{
+    position: relative;
+    padding-right: 20%;
+    top: 5%;
+    left: 5%;
+    width: 20%;
+}
+#facebook_btn{
+    position: relative;
+    padding-right: 15%;
+    width: 20%;
+    top: 5%;
+}
+#youtube_btn{
+    position: relative;
+    right: 0;
+    width: 20%;
+    top: 5%;
+}

@@ -8,14 +8,24 @@
   </head>
   <body>
     <ul>
-      <li style="float:left" id="logo"><a href="#">
+      <li style="float:left" id="logo">
+          <a href="/">
             <img src="{% static 'img/home/LogoGeX.png' %}" alt="Home" style="height: 50%">
           </a>
       <li ><a href="#" id="btn">Login</a></li>
       <li ><a href="#" id="btn">Sign Up</a></li>
     </ul>
-    {% block title %}
-    <h1>Gex</h1>
-    {% endblock %}
-  </body>
-</html>
+    <div id= "ytvideo-div">
+      <iframe id = "yt"  src="https://www.youtube.com/embed/jmLyJ_Mld94" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <a href="https://twitter.com/gexs_gg" target="_blank">
+        <img id= "twitter_btn" src="{% static 'img/home/twitter img.png' %}" alt="twitter">
+      </a>
+      <a href="https://www.facebook.com/gex.gg/" target="_blank">
+        <img id= "facebook_btn" src="{% static 'img/home/facebook button.png' %}" alt="facebook">
+      </a>
+      <a href="https://www.youtube.com/channel/UCvD7RV3PUbEajwuIfOMdjug" target="_blank">
+        <img id= "youtube_btn" src="{% static 'img/home/youtube-button.png' %}" alt="youtube">
+    </a>
+    </div>
+    </body>
+  </html>
