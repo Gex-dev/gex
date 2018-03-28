@@ -19,5 +19,6 @@ from django.conf.urls import url
 
 urlpatterns = [
     url(r'^$', views.home, name = 'home'),
+    url(r'^construction/$', views.construction, name = 'construction'),
     url(r'^admin/', admin.site.urls),
 ]
