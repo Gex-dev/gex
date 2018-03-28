@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(27, 34, 42);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(37, 50, 59);
+}
+
+li {
+    float: right;
+}
+#logo{
+    position: relative;
+    left: 2vw;
+    top: 1vh;
+}
+#btn{
+    display: block;
+    color: rgb(1, 166, 248);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+#btn:hover{
+    background: rgb(1,166,248);
+    color: white;
+}

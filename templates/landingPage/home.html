@@ -1,0 +1,20 @@
+{% extends 'landingPage/landingPageBase.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<div id= "ytvideo-div">
+  <iframe id = "yt"  src="https://www.youtube.com/embed/jmLyJ_Mld94" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <a href="https://twitter.com/gexs_gg" target="_blank">
+    <img id= "twitter_btn" src="{% static 'img/home/twitter img.png' %}" alt="twitter">
+  </a>
+  <a href="https://www.facebook.com/gex.gg/" target="_blank">
+    <img id= "facebook_btn" src="{% static 'img/home/facebook button.png' %}" alt="facebook">
+  </a>
+  <a href="https://www.youtube.com/channel/UCvD7RV3PUbEajwuIfOMdjug" target="_blank">
+    <img id= "youtube_btn" src="{% static 'img/home/youtube-button.png' %}" alt="youtube">
+</a>
+</div>
+{% endblock %}
