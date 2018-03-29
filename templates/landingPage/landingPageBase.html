@@ -1,0 +1,26 @@
+{% load static %}<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/landing-base.css' %}">
+</head>
+<body>
+    <ul>
+        <li style="float:left" id="logo">
+            <a href="/">
+                <img src="{% static 'img/home/LogoGeX.png' %}" alt="Home" style="height: 50%">
+            </a>
+        </li>
+        {% block nav %}
+            <li ><a href="/construction" id="btn">Login</a></li>
+            <li ><a href="/construction" id="btn">Sign Up</a></li>
+        {% endblock %}
+
+    
+    </ul>
+
+
+    {% block content %}
+    {% endblock %}
+</body>

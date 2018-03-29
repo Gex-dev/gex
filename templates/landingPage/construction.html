@@ -1,0 +1,16 @@
+{% extends 'landingPage/landingPageBase.html' %}
+{% load static %}
+<!DOCTYPE html>
+
+{% block nav %}
+<li ><a href="/" id="btn">Home</a></li>
+{% endblock %}
+
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/construction.css' %}">
+<img id= "pikagif" src="{% static 'img/construction/pika construction.gif' %}" alt="under construction">
+<h1>
+    Check Back Soon!
+</h1>
+{% endblock %}

@@ -1,0 +1,14 @@
+#pikagif {
+    position: relative;
+    top: 25vh;
+    left: 40%;
+    
+}
+h1{
+    position: relative;
+    top: 30vh;
+    left: 40%;
+    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(1, 166, 248)
+}
