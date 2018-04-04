@@ -25,7 +25,7 @@ SECRET_KEY = '(fskouu%=olk%yz$(uf846=j0#)p16favvtrrg^mv)9mlo-8ii'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost' , 'gex-starter-version-0-0-0.9mmkmwgppm.eu-west-1.elasticbeanstalk.com' ]
+ALLOWED_HOSTS = ['127.0.0.1','localhost' , 'gex-starter-version-0-0-0.9mmkmwgppm.eu-west-1.elasticbeanstalk.com' ]
 
 
 # Application definition
@@ -37,12 +37,31 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites', 
+
+    'allauth', 
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
 
     'gexHome',
     'users',
 
 ]
 AUTH_USER_MODEL = 'users.CustomUser'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+AUTHENTICATION_BACKENDS = (
+    "django.contrib.auth.backends.ModelBackend",
+    "allauth.account.auth_backends.AuthenticationBackend",
+)
+
+SITE_ID = 1
+
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

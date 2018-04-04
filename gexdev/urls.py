@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from gexHome import views
 from django.conf.urls import url
+from django.urls import include
 
 urlpatterns = [
     url(r'^$', views.home, name = 'home'),
     url(r'^construction/$', views.construction, name = 'construction'),
     url(r'^admin/', admin.site.urls),
+	url(r'^users/', include('users.urls')),
+	url(r'^users/', include('django.contrib.auth.urls')),
+    url(r'^accounts/', include('allauth.urls')),
 ]
