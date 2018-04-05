@@ -1,0 +1,15 @@
+#m_container{
+    position: relative;
+    width: 50%;
+}
+body {
+    background-color: rgb(27, 34, 42);
+}
+
+h2{
+    color: rgb(1, 166, 248);
+}
+
+.form-group{
+    color: rgb(1, 166, 248);
+}

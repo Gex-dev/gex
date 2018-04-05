@@ -1,6 +1,30 @@
+{% extends 'landingPage/landingPageBase.html' %}
+{% load socialaccount %}
+{% load widget_tweaks %}
+{% load static %}
+{% block content %}
+
+<div class="container" id= 'm_container'>
 <h2>Sign up</h2>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/forms.css' %}">
 <form method="post">
   {% csrf_token %}
-  {{ form.as_p }}
+  {% for hidden in form.hidden_fields %}
+    {{ hidden }}
+    {% endfor %}
+  
+    {% for field in form.visible_fields %}
+    <div class="form-group">
+      <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+      {{ field|add_class:'form-control'}}
+      {% for error in field.errors %}
+        <span class="help-block">{{ error }}</span>
+      {% endfor %}
+    </div>
+  {% endfor %}
   <button type="submit">Sign up</button>
 </form>
+</div>
+{% endblock %}

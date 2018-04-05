@@ -24,8 +24,10 @@
 
     
     </ul>
-
+    {% if user.is_authenticated %}
     <p>Welcome {{ user.username }} !!!</p>
+    {% endif %}
+
     {% block content %}
     {% endblock %}
 </body>
