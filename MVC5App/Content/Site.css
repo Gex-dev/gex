@@ -51,7 +51,7 @@ textarea {
     height:70%;
 }
 .navbar-logo{
-    background: url(./Content/img/LogoGex.png) no-repeat;
+    background: url(../Content/img/LogoGeX.png) no-repeat;
     position: relative;
     display: block;
     left: 5px;
