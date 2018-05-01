@@ -1,0 +1,24 @@
+﻿@model MVC5App.Models.IndexViewModel
+@{
+    ViewBag.Title = "Profile";
+    ViewBag.Name = User.Identity.Name;
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<p class="text-success">@ViewBag.StatusMessage</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="http://via.placeholder.com/300x250" />
+        </div>
+        <div class="col-md-8">
+            <ul class="list-group">
+                <li class="list-group-item">Steam Name</li>
+                <li class="list-group-item">Origin</li>
+                <li class="list-group-item">PSN</li>
+            </ul>
+            <h2>@ViewBag.Name</h2>
+        </div>
+    </div>
+</div>
