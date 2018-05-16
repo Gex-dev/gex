@@ -28,7 +28,7 @@ namespace MVC5App
             var myMessage = new SendGridMessage();
             myMessage.AddTo(message.Destination);
             myMessage.From = new System.Net.Mail.MailAddress(
-                                "gatekeeper@gex.gg", "Gan Dalf");
+                                "gatekeeper@gex.gg", "Heimdal");
             myMessage.Subject = message.Subject;
             myMessage.Text = message.Body;
             myMessage.Html = message.Body;
